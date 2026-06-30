@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Wildflower &amp; Fern — Independent Florist in Bath | Seasonal British Flowers</title>
+  <meta name="description" content="Wildflower &amp; Fern is an independent florist in Bath crafting seasonal, British-grown bouquets, wedding flowers and weekly subscriptions. Same-day delivery across Bath &amp; Bristol." />
+  <link rel="canonical" href="https://boz-demo-wildflower.vercel.app" />
+  <meta name="theme-color" content="#8a9a7b" />
+  <meta name="author" content="Wildflower &amp; Fern" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Wildflower &amp; Fern" />
+  <meta property="og:title" content="Wildflower &amp; Fern — Independent Florist in Bath" />
+  <meta property="og:description" content="Seasonal, British-grown bouquets, wedding flowers and weekly subscriptions, hand-tied in Bath." />
+  <meta property="og:url" content="https://boz-demo-wildflower.vercel.app" />
+  <meta property="og:image" content="https://picsum.photos/seed/wf-og/1200/630" />
+  <meta property="og:locale" content="en_GB" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wildflower &amp; Fern — Independent Florist in Bath" />
+  <meta name="twitter:description" content="Seasonal, British-grown bouquets, wedding flowers and weekly subscriptions, hand-tied in Bath." />
+  <meta name="twitter:image" content="https://picsum.photos/seed/wf-og/1200/630" />
+
+  <!-- Inline SVG favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23f6f1e7'/%3E%3Cg fill='none' stroke='%238a9a7b' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M16 27V14'/%3E%3Cpath d='M16 18c-3 0-5-2-5-5 3 0 5 2 5 5z'/%3E%3Cpath d='M16 16c3 0 5-2 5-5-3 0-5 2-5 5z'/%3E%3C/g%3E%3Cg fill='%23c1684a'%3E%3Ccircle cx='16' cy='9' r='2.4'/%3E%3C/g%3E%3Cg fill='%23cd9a8e'%3E%3Ccircle cx='12.5' cy='11' r='1.8'/%3E%3Ccircle cx='19.5' cy='11' r='1.8'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <!-- Fonts: one family, two optical roles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD: Florist / LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Wildflower & Fern",
+    "image": "https://picsum.photos/seed/wf-og/1200/630",
+    "url": "https://boz-demo-wildflower.vercel.app",
+    "telephone": "+441225 760 412",
+    "email": "hello@wildflowerandfern.co.uk",
+    "priceRange": "££",
+    "description": "Independent florist in Bath crafting seasonal, British-grown bouquets, wedding flowers and weekly subscriptions.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "14 Margaret's Buildings",
+      "addressLocality": "Bath",
+      "addressRegion": "Somerset",
+      "postalCode": "BA1 2LP",
+      "addressCountry": "GB"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.3859, "longitude": -2.3654 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/wildflowerandfern",
+      "https://www.facebook.com/wildflowerandfern",
+      "https://www.pinterest.co.uk/wildflowerandfern"
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "187" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "The Wildflower Bouquet",
+    "image": "https://picsum.photos/seed/wf-shop1/500/500",
+    "description": "Our signature just-picked posy of seasonal British blooms, gathered loose and airy.",
+    "brand": { "@type": "Brand", "name": "Wildflower & Fern" },
+    "offers": { "@type": "Offer", "priceCurrency": "GBP", "price": "42.00", "availability": "https://schema.org/InStock", "url": "https://boz-demo-wildflower.vercel.app/#shop" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Dusk Romance Bouquet",
+    "image": "https://picsum.photos/seed/wf-shop3/500/500",
+    "description": "Dusty-rose garden roses, chocolate cosmos and trailing amaranth.",
+    "brand": { "@type": "Brand", "name": "Wildflower & Fern" },
+    "offers": { "@type": "Offer", "priceCurrency": "GBP", "price": "55.00", "availability": "https://schema.org/InStock", "url": "https://boz-demo-wildflower.vercel.app/#shop" }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Wildflower and Fern, home">
+        <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
+          <g fill="none" stroke="#8a9a7b" stroke-width="1.6" stroke-linecap="round">
+            <path d="M16 29V14"/><path d="M16 18c-3 0-5-2-5-5 3 0 5 2 5 5z"/><path d="M16 16c3 0 5-2 5-5-3 0-5 2-5 5z"/>
+          </g>
+          <circle cx="16" cy="9" r="2.6" fill="#c1684a"/>
+          <circle cx="12.4" cy="11" r="1.9" fill="#cd9a8e"/><circle cx="19.6" cy="11" r="1.9" fill="#cd9a8e"/>
+        </svg>
+        <span>Wildflower &amp; Fern<span class="brand-sub">Bath · est. 2014</span></span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#weddings">Weddings</a></li>
+          <li><a href="#delivery">Delivery</a></li>
+          <li><a href="#contact">Visit Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" aria-label="Open basket">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6h18l-2 12H5L3 6Z"/><path d="M8 6a4 4 0 0 1 8 0"/></svg>
+          <span class="cart-count" style="display:none">0</span>
+        </button>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile" aria-hidden="true">
+    <button class="mobile-close" aria-label="Close menu">×</button>
+    <a href="#story">Our Story</a>
+    <a href="#collections">Collections</a>
+    <a href="#shop">Shop</a>
+    <a href="#weddings">Weddings</a>
+    <a href="#delivery">Delivery</a>
+    <a href="#contact">Visit Us</a>
+    <a class="btn btn-primary" href="#shop">Order Flowers</a>
+  </nav>
+  <div id="overlay" class="overlay"></div>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="petals" aria-hidden="true">
+        <svg class="petal" viewBox="0 0 24 24"><path d="M12 2c3 4 3 8 0 12-3-4-3-8 0-12z" fill="#cd9a8e"/></svg>
+        <svg class="petal" viewBox="0 0 24 24"><path d="M12 2c3 4 3 8 0 12-3-4-3-8 0-12z" fill="#c1684a"/></svg>
+        <svg class="petal" viewBox="0 0 24 24"><path d="M12 2c3 4 3 8 0 12-3-4-3-8 0-12z" fill="#8a9a7b"/></svg>
+        <svg class="petal" viewBox="0 0 24 24"><path d="M12 2c3 4 3 8 0 12-3-4-3-8 0-12z" fill="#cd9a8e"/></svg>
+        <svg class="petal" viewBox="0 0 24 24"><path d="M12 2c3 4 3 8 0 12-3-4-3-8 0-12z" fill="#c1684a"/></svg>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent florist · Bath, Somerset</p>
+          <h1>Flowers that look <span class="accent">freshly gathered</span> from an English garden.</h1>
+          <p class="lead">Seasonal, British-grown stems hand-tied into loose, romantic bouquets. Grown with care, gathered with intention, delivered the same day across Bath &amp; Bristol.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#shop">Shop the bouquets</a>
+            <a class="btn btn-ghost" href="#weddings">Wedding flowers</a>
+          </div>
+          <div class="hero-trust">
+            <span><span class="stars" aria-hidden="true">★★★★★</span> 4.9 from 187 reviews</span>
+            <span>🌿 British-grown stems</span>
+            <span>🚲 Carbon-light local delivery</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="blob-frame">
+            <img src="https://picsum.photos/seed/wf-hero/720/900" alt="A loose, romantic hand-tied bouquet of seasonal British flowers in soft pink and sage tones" fetchpriority="high" width="720" height="900" />
+          </div>
+          <div class="hero-badge">
+            <span class="dot" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5f6f52" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            Same-day delivery before 1pm
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Seasonal posies</span><span>Wedding flowers</span><span>Weekly subscriptions</span><span>Funeral tributes</span><span>Workshops</span>
+        <span>Seasonal posies</span><span>Wedding flowers</span><span>Weekly subscriptions</span><span>Funeral tributes</span><span>Workshops</span>
+      </div>
+    </div>
+
+    <!-- ===================== STORY ===================== -->
+    <section id="story" class="section-pad">
+      <div class="container story-grid">
+        <div class="story-media reveal">
+          <img src="https://picsum.photos/seed/wf-florist/700/880" alt="Lottie, founder of Wildflower and Fern, arranging flowers at her studio bench in Bath" loading="lazy" />
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow">Our story</p>
+          <h2>A little studio off Margaret's Buildings, built on a love of the seasons.</h2>
+          <p>Wildflower &amp; Fern began in 2014 when our founder, Lottie, swapped a desk job for a flower bucket and a market stall on Walcot Street. What started as Saturday posies has grown into a much-loved studio tucked just off Margaret's Buildings — but the heart of it hasn't changed.</p>
+          <p>We work almost entirely with British flower growers, including our own little plot just outside the city. That means our flowers travel a handful of miles, not thousands. They smell of the garden, they change with the months, and no two bunches are ever quite the same.</p>
+          <p>Whether it's a £28 letterbox posy or the flowers for your wedding day, every stem is chosen and tied by hand, right here in Bath.</p>
+          <div class="story-stats">
+            <div><div class="num">11</div><div class="lbl">Years on Margaret's Buildings</div></div>
+            <div><div class="num">90%</div><div class="lbl">British-grown stems</div></div>
+            <div><div class="num">200+</div><div class="lbl">Weddings &amp; events</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COLLECTIONS / GALLERY ===================== -->
+    <section id="collections" class="section-pad collections">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <p class="eyebrow">Seasonal collections</p>
+          <h2>Arrangements that follow the year</h2>
+          <p>We let the seasons lead. Filter by the time of year to see the blooms we're working with right now.</p>
+        </div>
+
+        <div class="filter-bar reveal" role="group" aria-label="Filter arrangements by season">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="spring" aria-pressed="false">Spring</button>
+          <button class="filter-btn" data-filter="summer" aria-pressed="false">Summer</button>
+          <button class="filter-btn" data-filter="autumn" aria-pressed="false">Autumn</button>
+          <button class="filter-btn" data-filter="winter" aria-pressed="false">Winter</button>
+        </div>
+
+        <div id="gallery" class="gallery" aria-label="Seasonal arrangement gallery"></div>
+      </div>
+    </section>
+
+    <!-- ===================== SHOP ===================== -->
+    <section id="shop" class="section-pad">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <p class="eyebrow">The flower shop</p>
+          <h2>Order a bouquet today</h2>
+          <p>Hand-tied fresh the morning of delivery. Add to your basket and check out in moments — or pop in and choose by eye.</p>
+        </div>
+        <div id="shop-grid" class="shop-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== WEDDINGS ===================== -->
+    <section id="weddings" class="section-pad weddings">
+      <svg class="leaf-deco tl" viewBox="0 0 200 200" aria-hidden="true"><path d="M100 190C60 150 40 90 100 10c60 80 40 140 0 180z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M100 190V40" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <svg class="leaf-deco br" viewBox="0 0 200 200" aria-hidden="true"><path d="M100 190C60 150 40 90 100 10c60 80 40 140 0 180z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M100 190V40" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <div class="container wed-grid">
+        <div class="reveal">
+          <p class="eyebrow">Weddings &amp; events</p>
+          <h2>The flowers for your most-loved day</h2>
+          <p>From an intimate registry-office posy to a full marquee of meadow blooms, we design wedding flowers that feel personal, seasonal and beautifully un-fussy. We only take a handful of weddings each month, so every couple gets our full attention.</p>
+          <ul class="wed-list">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f3e4df" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> A relaxed consultation over tea, in person or online</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f3e4df" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> A seasonal proposal &amp; mood board tailored to you</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f3e4df" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Bouquets, buttonholes, arches, urns &amp; table flowers</li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f3e4df" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> On-the-day set up across Bath, Bristol &amp; the Cotswolds</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">Enquire about your date</a>
+        </div>
+        <div class="wed-media reveal">
+          <img src="https://picsum.photos/seed/wf-wedding/640/760" alt="A romantic seasonal wedding bouquet and trailing meadow flower arch in soft, natural tones" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DELIVERY CHECKER ===================== -->
+    <section id="delivery" class="section-pad">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <p class="eyebrow">Same-day delivery</p>
+          <h2>Do we deliver to you?</h2>
+          <p>Pop in your postcode to check for same-day, hand-delivered flowers around Bath &amp; Bristol. Order before 1pm.</p>
+        </div>
+        <div class="delivery-card reveal">
+          <form id="postcode-form" novalidate>
+            <label for="postcode-input" class="sr-only" style="display:block;font-weight:600;margin-bottom:.4rem">Enter your postcode</label>
+            <div class="postcode-form">
+              <input id="postcode-input" name="postcode" type="text" inputmode="text" autocomplete="postal-code" placeholder="e.g. BA1 5LR" aria-describedby="postcode-result" required />
+              <button class="btn btn-primary" type="submit">Check postcode</button>
+            </div>
+          </form>
+          <div id="postcode-result" class="postcode-result" role="status" aria-live="polite"></div>
+          <p class="postcode-areas">Same-day areas: Bath (BA1–BA3, BA15), Bristol (BS1–BS9, BS31, BS39), Bradford-on-Avon, Box &amp; Tetbury. Nationwide letterbox flowers available everywhere else.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section id="reviews" class="section-pad testimonials">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <p class="eyebrow">Kind words</p>
+          <h2>Loved by Bath &amp; beyond</h2>
+          <p>A few notes from the lovely people who've trusted us with their flowers.</p>
+        </div>
+        <div id="testi-grid" class="testi-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== NEWSLETTER ===================== -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="newsletter reveal">
+          <p class="eyebrow">Stay in bloom</p>
+          <h2>Seasonal notes from the studio</h2>
+          <p>What's flowering, workshop dates and the odd subscriber-only treat. One gentle email a fortnight, never spam.</p>
+          <form id="news-form" novalidate>
+            <label for="news-email" class="sr-only" style="position:absolute;left:-9999px">Email address</label>
+            <div class="news-form">
+              <input id="news-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" aria-describedby="news-error" required />
+              <button class="btn btn-sage" type="submit">Subscribe</button>
+            </div>
+            <div id="news-error" class="field-error" role="alert" aria-live="assertive"></div>
+            <p id="news-success" class="news-success" role="status">Welcome to the studio! Check your inbox for a little hello. 🌸</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <p class="eyebrow">Visit us</p>
+          <h2>Come and say hello</h2>
+          <p>Find us tucked just off Margaret's Buildings — kettle's always on.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>The studio</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5f6f52" stroke-width="1.7"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                <div><a href="https://www.openstreetmap.org/?mlat=51.3859&mlon=-2.3654#map=17/51.3859/-2.3654" target="_blank" rel="noopener">14 Margaret's Buildings, Bath, BA1 2LP</a><div class="sub">Free 30-min parking on Brock Street nearby</div></div>
+              </li>
+              <li>
+                <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5f6f52" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+                <div><a href="tel:+441225760412">01225 760 412</a><div class="sub">Tue–Sat, we'll always pick up if we can</div></div>
+              </li>
+              <li>
+                <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5f6f52" stroke-width="1.7"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg></span>
+                <div><a href="mailto:hello@wildflowerandfern.co.uk">hello@wildflowerandfern.co.uk</a><div class="sub">For orders, weddings &amp; workshop bookings</div></div>
+              </li>
+              <li>
+                <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5f6f52" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+                <div><strong>Tue–Fri 9–5.30, Sat 9–4</strong><div class="sub">Closed Sun &amp; Mon (we're at the flower market!)</div></div>
+              </li>
+            </ul>
+            <p style="margin-top:1.4rem">
+              <a class="btn btn-primary" href="https://wa.me/441225760412?text=Hi%20Wildflower%20%26%20Fern%2C%20I%27d%20love%20to%20order%20some%20flowers" target="_blank" rel="noopener">Message us on WhatsApp</a>
+            </p>
+            <div class="map-frame">
+              <iframe
+                title="Map showing Wildflower & Fern on Margaret's Buildings, Bath"
+                loading="lazy"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-2.3724%2C51.3829%2C-2.3584%2C51.3889&amp;layer=mapnik&amp;marker=51.3859%2C-2.3654"></iframe>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <h3>Send an enquiry</h3>
+            <p style="font-size:.92rem">Weddings, large orders or a question — drop us a line and we'll reply within a working day.</p>
+            <form id="contact-form" class="form-grid" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="c-name">Your name</label>
+                  <input id="c-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="form-field">
+                  <label for="c-email">Email</label>
+                  <input id="c-email" name="email" type="email" autocomplete="email" required />
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="c-type">I'm enquiring about</label>
+                <select id="c-type" name="type">
+                  <option>A bouquet or gift</option>
+                  <option>Wedding flowers</option>
+                  <option>A weekly subscription</option>
+                  <option>A workshop</option>
+                  <option>Funeral tributes</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="c-msg">Your message</label>
+                <textarea id="c-msg" name="message" rows="4" required placeholder="Tell us a little about what you're after, dates, colours…"></textarea>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">Send enquiry</button>
+              <p class="contact-success" id="contact-success" role="status" tabindex="-1"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="brand">
+          <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+            <g fill="none" stroke="#cd9a8e" stroke-width="1.6" stroke-linecap="round"><path d="M16 29V14"/><path d="M16 18c-3 0-5-2-5-5 3 0 5 2 5 5z"/><path d="M16 16c3 0 5-2 5-5-3 0-5 2-5 5z"/></g>
+            <circle cx="16" cy="9" r="2.6" fill="#c1684a"/>
+          </svg>
+          <span>Wildflower &amp; Fern<span class="brand-sub">Bath · est. 2014</span></span>
+        </span>
+        <p>Seasonal, British-grown flowers hand-tied in Bath. Bouquets, weddings, subscriptions &amp; workshops.</p>
+        <address>
+          14 Margaret's Buildings, Bath, Somerset, BA1 2LP<br>
+          <a href="tel:+441225760412">01225 760 412</a> · <a href="mailto:hello@wildflowerandfern.co.uk">hello@wildflowerandfern.co.uk</a>
+        </address>
+        <div class="socials">
+          <a href="https://www.instagram.com/wildflowerandfern" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/wildflowerandfern" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M15 3h-3a4 4 0 0 0-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.pinterest.co.uk/wildflowerandfern" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 0 0-3.3 17.4c-.1-.8-.1-2 .1-2.9l1.1-4.7s-.3-.6-.3-1.4c0-1.4.8-2.4 1.8-2.4.8 0 1.2.6 1.2 1.4 0 .9-.5 2.1-.8 3.3-.2.9.5 1.7 1.4 1.7 1.7 0 2.9-2.2 2.9-4.7 0-1.9-1.3-3.4-3.7-3.4a4 4 0 0 0-4.2 4c0 .8.3 1.4.6 1.8.1.2.1.3.1.5l-.2.9c0 .3-.2.4-.5.2-1-.5-1.7-2-1.7-3.3 0-2.6 1.9-5 5.6-5 2.9 0 5.2 2.1 5.2 4.9 0 2.9-1.9 5.3-4.4 5.3-.9 0-1.7-.5-1.9-1l-.5 2c-.2.8-.7 1.7-1 2.3A9 9 0 1 0 12 3z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul class="footer-links">
+          <li><a href="#shop">Bouquets</a></li>
+          <li><a href="#shop">Letterbox flowers</a></li>
+          <li><a href="#collections">Seasonal collections</a></li>
+          <li><a href="#weddings">Wedding flowers</a></li>
+          <li><a href="#delivery">Delivery areas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Studio</h4>
+        <ul class="footer-links">
+          <li><a href="#story">Our story</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Visit us</a></li>
+          <li><a href="tel:+441225760412">Call the shop</a></li>
+          <li><a href="https://wa.me/441225760412" target="_blank" rel="noopener">WhatsApp us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Wildflower &amp; Fern. All rights reserved. A fictional demo florist.</span>
+      <span>Demo site built by <a href="https://bozapps.co.uk" target="_blank" rel="noopener">BozApps — bozapps.co.uk</a></span>
+    </div>
+  </footer>
+
+  <!-- ===================== CART DRAWER ===================== -->
+  <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping basket" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Your basket <span class="cart-count" aria-hidden="true" style="display:none">0</span></h3>
+      <button id="cart-close" class="mobile-close" style="position:static" aria-label="Close basket">×</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div id="cart-foot" class="cart-foot" style="display:none">
+      <div class="cart-total-row">
+        <span class="lbl">Subtotal</span>
+        <span class="val" id="cart-total">£0.00</span>
+      </div>
+      <button id="checkout-btn" class="btn btn-primary btn-block">Checkout securely</button>
+      <p class="cart-note">Free delivery on orders over £50 · Demo only, no payment taken</p>
+    </div>
+  </aside>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close image">×</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous arrangement">‹</button>
+      <button class="lightbox-nav lightbox-next" aria-label="Next arrangement">›</button>
+      <img id="lb-img" src="" alt="" />
+      <div class="lightbox-cap">
+        <h3 id="lb-title"></h3>
+        <p id="lb-note"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+    <span>Added</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
