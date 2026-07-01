@@ -1,3 +1,6 @@
+
+function __lf(s,w,h){var n=0,x=String(s);for(var i=0;i<x.length;i++){n=(n*31+x.charCodeAt(i))>>>0;}return 'https://loremflickr.com/'+w+'/'+h+'/flowers?lock='+(n%100000);}
+function __av(s){return 'https://i.pravatar.cc/200?u=wildflower'+encodeURIComponent(String(s));}
 /* =========================================================
    Wildflower & Fern — vanilla JS
    No frameworks, no build. Everything is progressive + accessible.
@@ -105,7 +108,7 @@
     fig.setAttribute("data-index", i);
     fig.setAttribute("aria-label", "View " + g.title + " arrangement larger");
     fig.innerHTML =
-      '<img src="https://picsum.photos/seed/' + g.seed + '/600/700" alt="' +
+      '<img src="' + __lf(g.seed, 600, 700) + '" alt="' +
       g.title + ' — ' + g.note + '" loading="lazy" />' +
       '<figcaption>' + g.title + '<small>' + g.cat + '</small></figcaption>';
     fig.addEventListener("click", () => openLightbox(i));
@@ -145,7 +148,7 @@
   }
   function renderLb() {
     const g = galleryData[lbIndex];
-    lbImg.src = "https://picsum.photos/seed/" + g.seed + "/900/640";
+    lbImg.src = "" + __lf(g.seed, 900, 640) + "";
     lbImg.alt = g.title + " — " + g.note;
     lbTitle.textContent = g.title;
     lbNote.textContent = g.note;
@@ -207,7 +210,7 @@
     card.innerHTML =
       '<div class="product-media">' +
       (p.tag ? '<span class="product-tag">' + p.tag + "</span>" : "") +
-      '<img src="https://picsum.photos/seed/' + p.seed + '/500/500" alt="' +
+      '<img src="' + __lf(p.seed, 500, 500) + '" alt="' +
       p.name + ' bouquet" loading="lazy" /></div>' +
       '<div class="product-body"><h3>' + p.name + "</h3>" +
       '<p class="desc">' + p.desc + "</p>" +
@@ -281,7 +284,7 @@
         const q = cart[id];
         return (
           '<div class="cart-line">' +
-          '<img src="https://picsum.photos/seed/' + p.seed + '/120/120" alt="" />' +
+          '<img src="' + __av(p.seed) + '" alt="" />' +
           "<div><div class=\"nm\">" + p.name + "</div>" +
           '<div class="pr">' + fmt(p.price) + " each</div>" +
           '<div class="qty"><button aria-label="Decrease quantity" data-dec="' + id + '">−</button>' +
@@ -389,7 +392,7 @@
     el.innerHTML =
       '<div class="stars" aria-label="' + t.rating + ' out of 5 stars">' + stars(t.rating) + "</div>" +
       "<blockquote>“" + t.quote + "”</blockquote>" +
-      '<div class="who"><img src="https://picsum.photos/seed/' + t.seed + '/88/88" alt="" />' +
+      '<div class="who"><img src="' + __av(t.seed) + '" alt="" />' +
       "<div><div class=\"nm\">" + t.name + '</div><div class="loc">' + t.loc + "</div></div></div>";
     testiGrid.appendChild(el);
   });
