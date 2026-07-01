@@ -1,5 +1,5 @@
 
-function __lf(s,w,h){var n=0,x=String(s);for(var i=0;i<x.length;i++){n=(n*31+x.charCodeAt(i))>>>0;}return 'https://loremflickr.com/'+w+'/'+h+'/flowers?lock='+(n%100000);}
+function __lf(s,w,h){var a=['img/g1.jpg','img/g2.jpg','img/g3.jpg','img/g4.jpg','img/g5.jpg','img/g6.jpg'];var n=0,x=String(s);for(var i=0;i<x.length;i++){n=(n*31+x.charCodeAt(i))>>>0;}return a[n%a.length];}
 function __av(s){return 'https://i.pravatar.cc/200?u=wildflower'+encodeURIComponent(String(s));}
 /* =========================================================
    Wildflower & Fern — vanilla JS
